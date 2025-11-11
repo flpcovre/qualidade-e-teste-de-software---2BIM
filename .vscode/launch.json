@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Select",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": [
+        "run",
+        "${input:selectTarget}"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "port": 9229
+    }
+  ],
+  "inputs": [
+    {
+      "id": "selectTarget",
+      "type": "pickString",
+      "description": "Escolha o script para debugar",
+      "options": ["original", "refactor"],
+      "default": "original"
+    }
+  ]
+}

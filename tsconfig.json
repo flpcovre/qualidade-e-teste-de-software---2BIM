@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 23",
+  "_version": "23.0.0",
+
+  "compilerOptions": {
+    "lib": ["es2024", "ESNext.Array", "ESNext.Collection", "ESNext.Iterator", "ESNext.Promise"],
+    "module": "node16",
+    "target": "es2024",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node16",
+    "baseUrl": ".",
+    "paths": {
+      "@original/*": ["original/*"],
+      "@refactor/*": ["refactor/*"]
+    }
+
+  },
+  "include": ["refactor/src/**/*", "original/src/**/*", "tests/**/*"]
+}
