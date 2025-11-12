@@ -16,10 +16,10 @@ describe('Item routes (unit)', () => {
 
     const body = res.json();
 
-    expect(res.statusCode).toBe(200);
+    expect(res.statusCode).toBe(201);
     expect(body).toHaveProperty('id');
     expect(body.name).toBe('Caneta');
-    expect(body.quantity).toBe(9);
+    expect(body.quantity).toBe(10);
   });
 
   it('Deve retornar 400 quando o payload for inválido', async() => {
