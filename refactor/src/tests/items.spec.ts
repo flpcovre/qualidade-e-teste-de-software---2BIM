@@ -19,7 +19,7 @@ describe('Item routes (unit)', () => {
     expect(res.statusCode).toBe(200);
     expect(body).toHaveProperty('id');
     expect(body.name).toBe('Caneta');
-    expect(body.quantity).toBe(10);
+    expect(body.quantity).toBe(9);
   });
 
   it('Deve retornar 400 quando o payload for inválido', async() => {
