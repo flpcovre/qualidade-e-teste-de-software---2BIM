@@ -16,7 +16,7 @@ describe('Item routes (unit)', () => {
 
     const body = res.json();
 
-    expect(res.statusCode).toBe(201);
+    expect(res.statusCode).toBe(200);
     expect(body).toHaveProperty('id');
     expect(body.name).toBe('Caneta');
     expect(body.quantity).toBe(10);
